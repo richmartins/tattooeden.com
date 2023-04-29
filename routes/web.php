@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/artists', function () {
+    return view('artists');
+});
+
+Route::get('/artists/{name}', function ($name) {
+    return view('artist', [$name]);
 });

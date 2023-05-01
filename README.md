@@ -1,6 +1,6 @@
 # TATTOEDEN.COM
 
-## install
+## Install
 
     cp .env.exemple .env
 

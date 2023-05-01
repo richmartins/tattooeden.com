@@ -21,6 +21,14 @@ Route::get('/artists', function () {
     return view('artists');
 });
 
-Route::get('/artists/{name}', function ($name) {
-    return view('artist', [$name]);
+Route::get('/artists/gtatattoo', function () {
+    return view('artist', [
+        'artist' => 'gtatattoo'
+    ]);
+});
+
+Route::get('/artists/mandytattoo', function () {
+    return view('artist', [
+        'artist' => 'mandytattoo'
+    ]);
 });
